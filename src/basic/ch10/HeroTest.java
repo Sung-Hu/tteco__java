@@ -19,6 +19,13 @@ public class HeroTest {
 		hero2.setHp(10_000_000);
 		hero2.showInfo();
 
+		System.out.println("-----------------------------------");
+		
+		System.out.println();
+		System.out.print("성후 가 배병호를 공격 하였습니다 : ");
+		System.out.println("치명적인 일격!");
+		
+		
 	}//end of main
 
 }//end of class
