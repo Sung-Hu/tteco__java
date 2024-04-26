@@ -51,11 +51,12 @@ public class Unit {
 		hp -= power;
 	}
 	
-	   public void attck(Unit m) {
-		      System.out.println(this.name + "이" + m.getName() + "을 공격합니다.");
-		      m.beAttacked(this.power);
+	   public void attck(Object m) {
+		   if(m instanceof Unit) {
+		      System.out.println(this.name + "이" + ((Unit) m).getName() + "을 공격합니다.");
+		      ((Unit)m).beAttacked(this.power);
 		   }
-
+	   }
 
 	
 	
